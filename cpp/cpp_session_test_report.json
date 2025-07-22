@@ -3,8 +3,8 @@
   "failures": 0,
   "disabled": 0,
   "errors": 0,
-  "timestamp": "2025-07-22T19:53:19Z",
-  "time": "4.678s",
+  "timestamp": "2025-07-22T20:02:15Z",
+  "time": "2.744s",
   "name": "AllTests",
   "testsuites": [
     {
@@ -13,8 +13,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-07-22T19:53:19Z",
-      "time": "1.846s",
+      "timestamp": "2025-07-22T20:02:15Z",
+      "time": "0.326s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -22,8 +22,8 @@
           "line": 226,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T19:53:19Z",
-          "time": "1.45s",
+          "timestamp": "2025-07-22T20:02:15Z",
+          "time": "0.18s",
           "classname": "TableSelectTest"
         },
         {
@@ -32,8 +32,8 @@
           "line": 331,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T19:53:20Z",
-          "time": "0.395s",
+          "timestamp": "2025-07-22T20:02:16Z",
+          "time": "0.145s",
           "classname": "TableSelectTest"
         }
       ]
@@ -44,8 +44,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-07-22T19:53:21Z",
-      "time": "2.831s",
+      "timestamp": "2025-07-22T20:02:16Z",
+      "time": "2.417s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -53,8 +53,8 @@
           "line": 220,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T19:53:21Z",
-          "time": "1.572s",
+          "timestamp": "2025-07-22T20:02:16Z",
+          "time": "1.217s",
           "classname": "TreeSelectTest"
         },
         {
@@ -63,8 +63,8 @@
           "line": 320,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T19:53:22Z",
-          "time": "1.259s",
+          "timestamp": "2025-07-22T20:02:17Z",
+          "time": "1.2s",
           "classname": "TreeSelectTest"
         }
       ]
