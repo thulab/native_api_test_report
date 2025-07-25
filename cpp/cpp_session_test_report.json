@@ -1,20 +1,122 @@
 {
-  "tests": 4,
+  "tests": 12,
   "failures": 0,
   "disabled": 0,
   "errors": 0,
-  "timestamp": "2025-07-22T20:09:50Z",
-  "time": "4.868s",
+  "timestamp": "2025-07-25T15:27:34Z",
+  "time": "20.701s",
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "test_session_connection",
+      "tests": 6,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2025-07-25T15:27:34Z",
+      "time": "13.242s",
+      "testsuite": [
+        {
+          "name": "test_default_value",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 78,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:34Z",
+          "time": "1.383s",
+          "classname": "test_session_connection"
+        },
+        {
+          "name": "test_database",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 97,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:35Z",
+          "time": "2.095s",
+          "classname": "test_session_connection"
+        },
+        {
+          "name": "test_fetchSize",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 117,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:37Z",
+          "time": "4.198s",
+          "classname": "test_session_connection"
+        },
+        {
+          "name": "test_zoneId",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 155,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:42Z",
+          "time": "1.298s",
+          "classname": "test_session_connection"
+        },
+        {
+          "name": "test_all",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 175,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:43Z",
+          "time": "2.186s",
+          "classname": "test_session_connection"
+        },
+        {
+          "name": "test_error_fetchSize",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 232,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:45Z",
+          "time": "2.08s",
+          "classname": "test_session_connection"
+        }
+      ]
+    },
+    {
+      "name": "test_session_connection_error",
+      "tests": 2,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2025-07-25T15:27:47Z",
+      "time": "0.005s",
+      "testsuite": [
+        {
+          "name": "test_error_username_and_password",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 198,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:47Z",
+          "time": "0.002s",
+          "classname": "test_session_connection_error"
+        },
+        {
+          "name": "test_error_session_close",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
+          "line": 214,
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2025-07-25T15:27:47Z",
+          "time": "0.003s",
+          "classname": "test_session_connection_error"
+        }
+      ]
+    },
     {
       "name": "TableSelectTest",
       "tests": 2,
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-07-22T20:09:50Z",
-      "time": "1.978s",
+      "timestamp": "2025-07-25T15:27:47Z",
+      "time": "5.185s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -22,18 +124,18 @@
           "line": 226,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T20:09:50Z",
-          "time": "1.509s",
+          "timestamp": "2025-07-25T15:27:47Z",
+          "time": "2.085s",
           "classname": "TableSelectTest"
         },
         {
           "name": "TestSelect2",
           "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/select_test.cpp",
-          "line": 331,
+          "line": 384,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T20:09:51Z",
-          "time": "0.469s",
+          "timestamp": "2025-07-25T15:27:49Z",
+          "time": "3.1s",
           "classname": "TableSelectTest"
         }
       ]
@@ -44,8 +146,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-07-22T20:09:52Z",
-      "time": "2.889s",
+      "timestamp": "2025-07-25T15:27:52Z",
+      "time": "2.267s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -53,8 +155,8 @@
           "line": 220,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T20:09:52Z",
-          "time": "1.669s",
+          "timestamp": "2025-07-25T15:27:52Z",
+          "time": "1.138s",
           "classname": "TreeSelectTest"
         },
         {
@@ -63,8 +165,8 @@
           "line": 320,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-07-22T20:09:53Z",
-          "time": "1.219s",
+          "timestamp": "2025-07-25T15:27:53Z",
+          "time": "1.129s",
           "classname": "TreeSelectTest"
         }
       ]
