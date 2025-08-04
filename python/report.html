@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">report.html</title>
+      <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">report.html</h1>
+    <p>Report generated on 04-Aug-2025 at 15:46:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">10 tests took 00:00:20.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">10 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" />
+            <span class="error">10 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.11.6&#34;, &#34;Platform&#34;: &#34;Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.17&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.4.1&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;metadata&#34;: &#34;3.1.1&#34;, &#34;html&#34;: &#34;4.1.1&#34;}, &#34;JAVA_HOME&#34;: &#34;/data/iotdb-test/other/tool/jdk/jdk1.8.0_451&#34;}, &#34;tests&#34;: {&#34;table/test_tablemodel_insert.py::test_insert_relational_tablet&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;table/test_tablemodel_insert.py::test_insert_relational_tablet&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;table/test_tablemodel_insert.py::test_insert_relational_tablet&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n[&amp;#x27;time&amp;#x27;, &amp;#x27;id1&amp;#x27;, &amp;#x27;id2&amp;#x27;, &amp;#x27;id3&amp;#x27;, &amp;#x27;attr1&amp;#x27;, &amp;#x27;attr2&amp;#x27;, &amp;#x27;attr3&amp;#x27;, &amp;#x27;boolean&amp;#x27;, &amp;#x27;int32&amp;#x27;, &amp;#x27;int64&amp;#x27;, &amp;#x27;float&amp;#x27;, &amp;#x27;double&amp;#x27;, &amp;#x27;text&amp;#x27;, &amp;#x27;timestamp&amp;#x27;, &amp;#x27;date&amp;#x27;, &amp;#x27;blob&amp;#x27;, &amp;#x27;string&amp;#x27;]\n0\t\t1970-01-01T08:00:00.000+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tFalse\t\t0\t\t0\t\t0.0\t\t0.0\t\t1234567890\t\t1970-01-01T08:00:00.000+08:00\t\t1970-01-01\t\t0x31323334353637383930\t\t1234567890\n0\t\t1970-01-01T08:00:00.001+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t-2147483648\t\t-9223372036854775808\t\t-0.12345678\t\t-0.12345678901234566\t\tabcdefghijklmnopqrstuvwsyz\t\tNaT\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\tabcdefghijklmnopqrstuvwsyz\n0\t\t1970-01-01T08:00:00.002+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t2147483647\t\t9223372036854775807\t\t0.12345679\t\t0.12345678901234566\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t292278994-08-17T07:12:55.807+08:00\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\n0\t\t1970-01-01T08:00:00.003+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t1\t\t1\t\t1.0\t\t1.0\t\t\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.001+08:00\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.004+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t-1\t\t-1\t\t1.1234567\t\t1.1234567890123457\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\n0\t\t1970-01-01T08:00:00.005+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t10\t\t11\t\t4.123456\t\t4.123456789012345\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.006+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t-10\t\t-11\t\t12.12345\t\t12.12345678901234\t\ttest01\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\tstring01\n0\t\t1970-01-01T08:00:00.007+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tNone\t\tNone\t\tNone\t\tNone\t\tNone\t\t\t\tNone\t\t1970-01-01\t\t0x0\t\t\n0\t\t1970-01-01T08:00:00.008+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t0\t\t0\t\t-0.0\t\t-0.0\t\t    \t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x20202020\t\t    \n0\t\t1970-01-01T08:00:00.009+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t10\t\t11\t\t1.1\t\t10011.1\t\ttest01\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\tstring01\n[&amp;#x27;time&amp;#x27;, &amp;#x27;\u5730\u533a&amp;#x27;, &amp;#x27;\u5382\u53f7&amp;#x27;, &amp;#x27;\u8bbe\u5907\u53f7&amp;#x27;, &amp;#x27;\u65e5\u671f&amp;#x27;, &amp;#x27;\u65f6\u95f4&amp;#x27;, &amp;#x27;\u8d1f\u8d23\u4eba&amp;#x27;, &amp;#x27;\u6d4b\u70b91&amp;#x27;, &amp;#x27;\u6d4b\u70b92&amp;#x27;, &amp;#x27;\u6d4b\u70b93&amp;#x27;, &amp;#x27;\u6d4b\u70b94&amp;#x27;, &amp;#x27;\u6d4b\u70b95&amp;#x27;, &amp;#x27;\u6d4b\u70b96&amp;#x27;, &amp;#x27;\u6d4b\u70b97&amp;#x27;, &amp;#x27;\u6d4b\u70b98&amp;#x27;, &amp;#x27;\u6d4b\u70b99&amp;#x27;, &amp;#x27;\u6d4b\u70b910&amp;#x27;]\n0\t\t1970-01-01T08:00:00.000+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tFalse\t\t0\t\t0\t\t0.0\t\t0.0\t\t1234567890\t\t1970-01-01T08:00:00.000+08:00\t\t1970-01-01\t\t0x31323334353637383930\t\t1234567890\n0\t\t1970-01-01T08:00:00.001+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t-2147483648\t\t-9223372036854775808\t\t-0.12345678\t\t-0.12345678901234566\t\tabcdefghijklmnopqrstuvwsyz\t\tNaT\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\tabcdefghijklmnopqrstuvwsyz\n0\t\t1970-01-01T08:00:00.002+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t2147483647\t\t9223372036854775807\t\t0.12345679\t\t0.12345678901234566\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t292278994-08-17T07:12:55.807+08:00\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\n0\t\t1970-01-01T08:00:00.003+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t1\t\t1\t\t1.0\t\t1.0\t\t\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.001+08:00\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.004+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t-1\t\t-1\t\t1.1234567\t\t1.1234567890123457\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\n0\t\t1970-01-01T08:00:00.005+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t10\t\t11\t\t4.123456\t\t4.123456789012345\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.006+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t-10\t\t-11\t\t12.12345\t\t12.12345678901234\t\ttest01\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\tstring01\n0\t\t1970-01-01T08:00:00.007+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tNone\t\tNone\t\tNone\t\tNone\t\tNone\t\t\t\tNone\t\t1970-01-01\t\t0x0\t\t\n0\t\t1970-01-01T08:00:00.008+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t0\t\t0\t\t-0.0\t\t-0.0\t\t    \t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x20202020\t\t    \n0\t\t1970-01-01T08:00:00.009+08:00\t\tid1\uff1a9\t\tid2\uff1a9\t\tid3\uff1a9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t10\t\t11\t\t1.1\t\t10011.1\t\ttest01\t\t1970-01-01T08:00:00.011+08:00\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\tstring01\n&#34;}], &#34;table/test_tablemodel_insert.py::test_insert_relational_Numpy_tablet&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;table/test_tablemodel_insert.py::test_insert_relational_Numpy_tablet&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;table/test_tablemodel_insert.py::test_insert_relational_Numpy_tablet&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n[&amp;#x27;time&amp;#x27;, &amp;#x27;id1&amp;#x27;, &amp;#x27;id2&amp;#x27;, &amp;#x27;id3&amp;#x27;, &amp;#x27;attr1&amp;#x27;, &amp;#x27;attr2&amp;#x27;, &amp;#x27;attr3&amp;#x27;, &amp;#x27;boolean&amp;#x27;, &amp;#x27;int32&amp;#x27;, &amp;#x27;int64&amp;#x27;, &amp;#x27;float&amp;#x27;, &amp;#x27;double&amp;#x27;, &amp;#x27;text&amp;#x27;, &amp;#x27;timestamp&amp;#x27;, &amp;#x27;date&amp;#x27;, &amp;#x27;blob&amp;#x27;, &amp;#x27;string&amp;#x27;]\n0\t\t1970-01-01T08:00:00.005+08:00\t\tid1:5\t\tid2:5\t\tid3:5\t\tattr1:5\t\tattr2:5\t\tattr3:5\t\tTrue\t\t10\t\t10\t\t4.123456\t\t4.123456789012345\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.010+08:00\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.004+08:00\t\tid1:4\t\tid2:4\t\tid3:4\t\tattr1:4\t\tattr2:4\t\tattr3:4\t\tFalse\t\t-1\t\t-1\t\t1.1234567\t\t1.1234567890123457\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1970-01-01T07:59:59.999+08:00\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\n0\t\t1970-01-01T08:00:00.007+08:00\t\tid1:7\t\tid2:7\t\tid3:7\t\tattr1:7\t\tattr2:7\t\tattr3:7\t\tTrue\t\t0\t\t0\t\t-0.0\t\t-0.0\t\t    \t\t1970-01-01T08:00:00.000+08:00\t\t1970-01-01\t\t0x202020\t\t    \n0\t\t1970-01-01T08:00:00.006+08:00\t\tid1:6\t\tid2:6\t\tid3:6\t\tattr1:6\t\tattr2:6\t\tattr3:6\t\tFalse\t\t-10\t\t-10\t\t12.12345\t\t12.12345678901234\t\t\t\t1970-01-01T07:59:59.990+08:00\t\t1970-01-01\t\t0x0\t\t\n0\t\t1970-01-01T08:00:00.003+08:00\t\tid1:3\t\tid2:3\t\tid3:3\t\tattr1:3\t\tattr2:3\t\tattr3:3\t\tTrue\t\t1\t\t1\t\t1.0\t\t1.0\t\t\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.001+08:00\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.009+08:00\t\tid1:9\t\tid2:9\t\tid3:9\t\tattr1:9\t\tattr2:9\t\tattr3:9\t\tTrue\t\t10\t\t10\t\t1.1\t\t1.1\t\ttest01\t\t1970-01-01T08:00:00.010+08:00\t\t1970-01-01\t\t0x31323334353637383930\t\ttest01\n0\t\t1970-01-01T08:00:00.008+08:00\t\tid1:8\t\tid2:8\t\tid3:8\t\tattr1:8\t\tattr2:8\t\tattr3:8\t\tFalse\t\t10\t\t10\t\t1.1\t\t1.1\t\ttest01\t\t1970-01-01T08:00:00.010+08:00\t\t1970-01-01\t\t0x31323334353637383930\t\ttest01\n0\t\t1970-01-01T08:00:00.001+08:00\t\tid1:1\t\tid2:1\t\tid3:1\t\tattr1:1\t\tattr2:1\t\tattr3:1\t\tTrue\t\t-2147483648\t\t-9223372036854775808\t\t-0.12345678\t\t-0.12345678901234566\t\tabcdefghijklmnopqrstuvwsyz\t\tNaT\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\tabcdefghijklmnopqrstuvwsyz\n0\t\t1970-01-01T08:00:00.000+08:00\t\tid1:0\t\tid2:0\t\tid3:0\t\tattr1:0\t\tattr2:0\t\tattr3:0\t\tFalse\t\t0\t\t0\t\t0.0\t\t0.0\t\t1234567890\t\t1970-01-01T08:00:00.000+08:00\t\t1970-01-01\t\t0x31323334353637383930\t\t1234567890\n0\t\t1970-01-01T08:00:00.002+08:00\t\tid1:2\t\tid2:2\t\tid3:2\t\tattr1:2\t\tattr2:2\t\tattr3:2\t\tFalse\t\t2147483647\t\t9223372036854775807\t\t0.12345679\t\t0.12345678901234566\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t292278994-08-17T07:12:55.807+08:00\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\n[&amp;#x27;time&amp;#x27;, &amp;#x27;id1&amp;#x27;, &amp;#x27;id2&amp;#x27;, &amp;#x27;id3&amp;#x27;, &amp;#x27;attr1&amp;#x27;, &amp;#x27;attr2&amp;#x27;, &amp;#x27;attr3&amp;#x27;, &amp;#x27;boolean&amp;#x27;, &amp;#x27;int32&amp;#x27;, &amp;#x27;int64&amp;#x27;, &amp;#x27;float&amp;#x27;, &amp;#x27;double&amp;#x27;, &amp;#x27;text&amp;#x27;, &amp;#x27;timestamp&amp;#x27;, &amp;#x27;date&amp;#x27;, &amp;#x27;blob&amp;#x27;, &amp;#x27;string&amp;#x27;]\n0\t\t1970-01-01T08:00:00.009+08:00\t\tid1:9\t\tid2:9\t\tid3:9\t\tattr1:9\t\tattr2:9\t\tNone\t\tTrue\t\tNone\t\t10\t\tNone\t\t1.1\t\tNone\t\t1970-01-01T08:00:00.010+08:00\t\tNone\t\t0x31323334353637383930\t\ttest01\n0\t\t1970-01-01T08:00:00.005+08:00\t\tid1:5\t\tid2:5\t\tid3:5\t\tattr1:5\t\tattr2:5\t\tattr3:5\t\tTrue\t\t10\t\t10\t\t4.123456\t\t4.123456789012345\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.010+08:00\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.004+08:00\t\tid1:4\t\tid2:4\t\tid3:4\t\tattr1:4\t\tattr2:4\t\tattr3:4\t\tFalse\t\t-1\t\t-1\t\t1.1234567\t\t1.1234567890123457\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1970-01-01T07:59:59.999+08:00\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\n0\t\t1970-01-01T08:00:00.006+08:00\t\tid1:6\t\tid2:6\t\tid3:6\t\tattr1:6\t\tattr2:6\t\tattr3:6\t\tFalse\t\t-10\t\t-10\t\t12.12345\t\t12.12345678901234\t\t\t\t1970-01-01T07:59:59.990+08:00\t\t1970-01-01\t\t0x0\t\t\n0\t\t1970-01-01T08:00:00.000+08:00\t\tid1:0\t\tid2:0\t\tid3:0\t\tattr1:0\t\tattr2:0\t\tattr3:0\t\tFalse\t\t0\t\t0\t\t0.0\t\t0.0\t\t1234567890\t\t1970-01-01T08:00:00.000+08:00\t\t1970-01-01\t\t0x31323334353637383930\t\t1234567890\n0\t\t1970-01-01T08:00:00.008+08:00\t\tid1:8\t\tid2:8\t\tid3:8\t\tattr1:8\t\tattr2:8\t\tattr3:8\t\tNone\t\t10\t\tNone\t\t1.1\t\tNone\t\ttest01\t\tNone\t\t1970-01-01\t\tNone\t\ttest01\n0\t\t1970-01-01T08:00:00.007+08:00\t\tid1:7\t\tid2:7\t\tid3:7\t\tattr1:7\t\tattr2:7\t\tattr3:7\t\tTrue\t\t0\t\t0\t\t-0.0\t\t-0.0\t\t    \t\t1970-01-01T08:00:00.000+08:00\t\t1970-01-01\t\t0x202020\t\t    \n0\t\t1970-01-01T08:00:00.001+08:00\t\tid1:1\t\tid2:1\t\tid3:1\t\tattr1:1\t\tattr2:1\t\tattr3:1\t\tTrue\t\t-2147483648\t\t-9223372036854775808\t\t-0.12345678\t\t-0.12345678901234566\t\tabcdefghijklmnopqrstuvwsyz\t\tNaT\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\tabcdefghijklmnopqrstuvwsyz\n0\t\t1970-01-01T08:00:00.003+08:00\t\tid1:3\t\tid2:3\t\tid3:3\t\tattr1:3\t\tattr2:3\t\tattr3:3\t\tTrue\t\t1\t\t1\t\t1.0\t\t1.0\t\t\u6ca1\u95ee\u9898\t\t1970-01-01T08:00:00.001+08:00\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t\u6ca1\u95ee\u9898\n0\t\t1970-01-01T08:00:00.002+08:00\t\tid1:2\t\tid2:2\t\tid3:2\t\tattr1:2\t\tattr2:2\t\tattr3:2\t\tFalse\t\t2147483647\t\t9223372036854775807\t\t0.12345679\t\t0.12345678901234566\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t292278994-08-17T07:12:55.807+08:00\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\n&#34;}], &#34;table/test_tablemodel_insert.py::test_insert_relational_tablet_direct&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;table/test_tablemodel_insert.py::test_insert_relational_tablet_direct&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;table/test_tablemodel_insert.py::test_insert_relational_tablet_direct&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;table/test_tablemodel_query.py::test_query&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;table/test_tablemodel_query.py::test_query&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;table/test_tablemodel_query.py::test_query&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n[&amp;#x27;id1&amp;#x27;, &amp;#x27;id2&amp;#x27;, &amp;#x27;id3&amp;#x27;, &amp;#x27;attr1&amp;#x27;, &amp;#x27;attr2&amp;#x27;, &amp;#x27;attr3&amp;#x27;, &amp;#x27;BOOLEAN&amp;#x27;, &amp;#x27;INT32&amp;#x27;, &amp;#x27;INT64&amp;#x27;, &amp;#x27;FLOAT&amp;#x27;, &amp;#x27;DOUBLE&amp;#x27;, &amp;#x27;TEXT&amp;#x27;, &amp;#x27;DATE&amp;#x27;, &amp;#x27;TIMESTAMP&amp;#x27;, &amp;#x27;BLOB&amp;#x27;, &amp;#x27;STRING&amp;#x27;]\n[&amp;lt;TSDataType.STRING: 11&amp;gt;, &amp;lt;TSDataType.STRING: 11&amp;gt;, &amp;lt;TSDataType.STRING: 11&amp;gt;, &amp;lt;TSDataType.STRING: 11&amp;gt;, &amp;lt;TSDataType.STRING: 11&amp;gt;, &amp;lt;TSDataType.STRING: 11&amp;gt;, &amp;lt;TSDataType.BOOLEAN: 0&amp;gt;, &amp;lt;TSDataType.INT32: 1&amp;gt;, &amp;lt;TSDataType.INT64: 2&amp;gt;, &amp;lt;TSDataType.FLOAT: 3&amp;gt;, &amp;lt;TSDataType.DOUBLE: 4&amp;gt;, &amp;lt;TSDataType.TEXT: 5&amp;gt;, &amp;lt;TSDataType.DATE: 9&amp;gt;, &amp;lt;TSDataType.TIMESTAMP: 8&amp;gt;, &amp;lt;TSDataType.BLOB: 10&amp;gt;, &amp;lt;TSDataType.STRING: 11&amp;gt;]\n&#34;}], &#34;tree/test_connection_time_out.py::test_connection_time_out&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tree/test_connection_time_out.py::test_connection_time_out&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_connection_time_out.py::test_connection_time_out&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n1\t\tsuccess\n&#34;}], &#34;tree/test_ssl.py::test_session_ssl_connection&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tree/test_ssl.py::test_session_ssl_connection&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_ssl.py::test_session_ssl_connection&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tree/test_ssl.py::test_session_pool_ssl_connection&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tree/test_ssl.py::test_session_pool_ssl_connection&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_ssl.py::test_session_pool_ssl_connection&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tree/test_ssl.py::test_session_cluster_ssl_connection&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tree/test_ssl.py::test_session_cluster_ssl_connection&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_ssl.py::test_session_cluster_ssl_connection&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_tablet&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_tablet&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_tablet&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n1\t\t1970-01-01\t\t0x31323334353637383930\t\t0.0\t\t0\t\t0\t\t1234567890\t\t1234567890\t\t0.0\t\tFalse\t\t1970-01-01T08:00:00.000+08:00\n2\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\t-0.12345678\t\t-9223372036854775808\t\t-2147483648\t\tabcdefghijklmnopqrstuvwsyz\t\tabcdefghijklmnopqrstuvwsyz\t\t-0.12345678901234566\t\tTrue\t\tNaT\n3\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t0.12345679\t\t9223372036854775807\t\t2147483647\t\t!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t0.12345678901234566\t\tTrue\t\t292278994-08-17T07:12:55.807+08:00\n4\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t1.0\t\t1\t\t1\t\t\u6ca1\u95ee\u9898\t\t\u6ca1\u95ee\u9898\t\t1.0\t\tTrue\t\t1970-01-01T08:00:00.001+08:00\n5\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t1.1234567\t\t-1\t\t-1\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1.1234567890123457\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n6\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t4.123456\t\t11\t\t10\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t4.123456789012345\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n7\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\t12.12345\t\t-11\t\t-10\t\tstring01\t\ttest01\t\t12.12345678901234\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n8\t\t1970-01-01\t\t0x0\t\tNone\t\tNone\t\tNone\t\t\t\t\t\tNone\t\tNone\t\tNone\n9\t\t1970-01-01\t\t0x20202020\t\t-0.0\t\t0\t\t0\t\t    \t\t    \t\t-0.0\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n10\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\t1.1\t\t11\t\t10\t\tstring01\t\ttest01\t\t10011.1\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n1\t\t1970-01-01\t\t0x31323334353637383930\t\t0.0\t\t0\t\t0\t\t1234567890\t\t1234567890\t\t0.0\t\tFalse\t\t1970-01-01T08:00:00.000+08:00\n2\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\t-0.12345678\t\t-9223372036854775808\t\t-2147483648\t\tabcdefghijklmnopqrstuvwsyz\t\tabcdefghijklmnopqrstuvwsyz\t\t-0.12345678901234566\t\tTrue\t\tNaT\n3\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t0.12345679\t\t9223372036854775807\t\t2147483647\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t0.12345678901234566\t\tFalse\t\t292278994-08-17T07:12:55.807+08:00\n4\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t1.0\t\t1\t\t1\t\t\u6ca1\u95ee\u9898\t\t\u6ca1\u95ee\u9898\t\t1.0\t\tTrue\t\t1970-01-01T08:00:00.001+08:00\n5\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t1.1234567\t\t-1\t\t-1\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1.1234567890123457\t\tFalse\t\t1970-01-01T07:59:59.999+08:00\n6\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t4.123456\t\t10\t\t10\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t4.123456789012345\t\tTrue\t\t1970-01-01T08:00:00.010+08:00\n7\t\t1970-01-01\t\t0x0\t\t12.12345\t\t-10\t\t-10\t\t\t\t\t\t12.12345678901234\t\tFalse\t\t1970-01-01T07:59:59.990+08:00\n8\t\t1970-01-01\t\t0x202020\t\t-0.0\t\t0\t\t0\t\t    \t\t    \t\t-0.0\t\tTrue\t\t1970-01-01T08:00:00.000+08:00\n9\t\t1970-01-01\t\t0x31323334353637383930\t\t1.1\t\t10\t\t10\t\ttest01\t\ttest01\t\t1.1\t\tFalse\t\t1970-01-01T08:00:00.010+08:00\n10\t\t1970-01-01\t\t0x31323334353637383930\t\t1.1\t\t10\t\t10\t\ttest01\t\ttest01\t\t1.1\t\tTrue\t\t1970-01-01T08:00:00.010+08:00\n1\t\t1970-01-01\t\t0x31323334353637383930\t\t0.0\t\t0\t\t0\t\t1234567890\t\t1234567890\t\t0.0\t\tFalse\t\t1970-01-01T08:00:00.000+08:00\n2\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\t-0.12345678\t\t-9223372036854775808\t\t-2147483648\t\tabcdefghijklmnopqrstuvwsyz\t\tabcdefghijklmnopqrstuvwsyz\t\t-0.12345678901234566\t\tTrue\t\tNaT\n3\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t0.12345679\t\t9223372036854775807\t\t2147483647\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t0.12345678901234566\t\tFalse\t\t292278994-08-17T07:12:55.807+08:00\n4\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t1.0\t\t1\t\t1\t\t\u6ca1\u95ee\u9898\t\t\u6ca1\u95ee\u9898\t\t1.0\t\tTrue\t\t1970-01-01T08:00:00.001+08:00\n5\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t1.1234567\t\t-1\t\t-1\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1.1234567890123457\t\tFalse\t\t1970-01-01T07:59:59.999+08:00\n6\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t4.123456\t\t10\t\t10\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t4.123456789012345\t\tTrue\t\t1970-01-01T08:00:00.010+08:00\n7\t\t1970-01-01\t\t0x0\t\t12.12345\t\t-10\t\t-10\t\t\t\t\t\t12.12345678901234\t\tFalse\t\t1970-01-01T07:59:59.990+08:00\n8\t\t1970-01-01\t\t0x202020\t\t-0.0\t\t0\t\t0\t\t    \t\t    \t\t-0.0\t\tTrue\t\t1970-01-01T08:00:00.000+08:00\n9\t\t1970-01-01\t\tNone\t\t1.1\t\t10\t\tNone\t\ttest01\t\ttest01\t\tNone\t\tFalse\t\tNone\n10\t\tNone\t\t0x31323334353637383930\t\t1.1\t\tNone\t\t10\t\tNone\t\tNone\t\t1.1\t\tNone\t\t1970-01-01T08:00:00.010+08:00\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_aligned_tablet&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_aligned_tablet&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_aligned_tablet&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\n1\t\t1970-01-01\t\t0x31323334353637383930\t\t0.0\t\t0\t\t0\t\t1234567890\t\t1234567890\t\t0.0\t\tFalse\t\t1970-01-01T08:00:00.000+08:00\n2\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\t-0.12345678\t\t-9223372036854775808\t\t-2147483648\t\tabcdefghijklmnopqrstuvwsyz\t\tabcdefghijklmnopqrstuvwsyz\t\t-0.12345678901234566\t\tTrue\t\tNaT\n3\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t0.12345679\t\t9223372036854775807\t\t2147483647\t\t!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t0.12345678901234566\t\tTrue\t\t292278994-08-17T07:12:55.807+08:00\n4\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t1.0\t\t1\t\t1\t\t\u6ca1\u95ee\u9898\t\t\u6ca1\u95ee\u9898\t\t1.0\t\tTrue\t\t1970-01-01T08:00:00.001+08:00\n5\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t1.1234567\t\t-1\t\t-1\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1.1234567890123457\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n6\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t4.123456\t\t11\t\t10\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t4.123456789012345\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n7\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\t12.12345\t\t-11\t\t-10\t\tstring01\t\ttest01\t\t12.12345678901234\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n8\t\t1970-01-01\t\t0x0\t\tNone\t\tNone\t\tNone\t\t\t\t\t\tNone\t\tNone\t\tNone\n9\t\t1970-01-01\t\t0x20202020\t\t-0.0\t\t0\t\t0\t\t    \t\t    \t\t-0.0\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n10\t\t1970-01-01\t\t0x48656c6c6f2c20576f726c6421\t\t1.1\t\t11\t\t10\t\tstring01\t\ttest01\t\t10011.1\t\tTrue\t\t1970-01-01T08:00:00.011+08:00\n1\t\t1970-01-01\t\t0x31323334353637383930\t\t0.0\t\t0\t\t0\t\t1234567890\t\t1234567890\t\t0.0\t\tFalse\t\t1970-01-01T08:00:00.000+08:00\n2\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\t-0.12345678\t\t-9223372036854775808\t\t-2147483648\t\tabcdefghijklmnopqrstuvwsyz\t\tabcdefghijklmnopqrstuvwsyz\t\t-0.12345678901234566\t\tTrue\t\tNaT\n3\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t0.12345679\t\t9223372036854775807\t\t2147483647\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t0.12345678901234566\t\tFalse\t\t292278994-08-17T07:12:55.807+08:00\n4\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t1.0\t\t1\t\t1\t\t\u6ca1\u95ee\u9898\t\t\u6ca1\u95ee\u9898\t\t1.0\t\tTrue\t\t1970-01-01T08:00:00.001+08:00\n5\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t1.1234567\t\t-1\t\t-1\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1.1234567890123457\t\tFalse\t\t1970-01-01T07:59:59.999+08:00\n6\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t4.123456\t\t10\t\t10\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t4.123456789012345\t\tTrue\t\t1970-01-01T08:00:00.010+08:00\n7\t\t1970-01-01\t\t0x0\t\t12.12345\t\t-10\t\t-10\t\t\t\t\t\t12.12345678901234\t\tFalse\t\t1970-01-01T07:59:59.990+08:00\n8\t\t1970-01-01\t\t0x202020\t\t-0.0\t\t0\t\t0\t\t    \t\t    \t\t-0.0\t\tTrue\t\t1970-01-01T08:00:00.000+08:00\n9\t\t1970-01-01\t\t0x31323334353637383930\t\t1.1\t\t10\t\t10\t\ttest01\t\ttest01\t\t1.1\t\tFalse\t\t1970-01-01T08:00:00.010+08:00\n10\t\t1970-01-01\t\t0x31323334353637383930\t\t1.1\t\t10\t\t10\t\ttest01\t\ttest01\t\t1.1\t\tTrue\t\t1970-01-01T08:00:00.010+08:00\n1\t\t1970-01-01\t\t0x31323334353637383930\t\t0.0\t\t0\t\t0\t\t1234567890\t\t1234567890\t\t0.0\t\tFalse\t\t1970-01-01T08:00:00.000+08:00\n2\t\t1000-01-01\t\t0x6162636465666768696a6b6c6d6e6f707172737475767773797a\t\t-0.12345678\t\t-9223372036854775808\t\t-2147483648\t\tabcdefghijklmnopqrstuvwsyz\t\tabcdefghijklmnopqrstuvwsyz\t\t-0.12345678901234566\t\tTrue\t\tNaT\n3\t\t9999-12-31\t\t0x21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7e\t\t0.12345679\t\t9223372036854775807\t\t2147483647\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\t\t0.12345678901234566\t\tFalse\t\t292278994-08-17T07:12:55.807+08:00\n4\t\t1970-01-01\t\t0xe6b2a1e997aee9a298\t\t1.0\t\t1\t\t1\t\t\u6ca1\u95ee\u9898\t\t\u6ca1\u95ee\u9898\t\t1.0\t\tTrue\t\t1970-01-01T08:00:00.001+08:00\n5\t\t1970-01-01\t\t0xefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822f\t\t1.1234567\t\t-1\t\t-1\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\t\t1.1234567890123457\t\tFalse\t\t1970-01-01T07:59:59.999+08:00\n6\t\t1970-01-01\t\t0x313233343536373839306162636465666768696a6b6c6d6e6f707172737475767773797a21402324255e262a28295f2b7d7b7c3a607e2d3d5b5d3b2c2e2f3c3e3f7eefbc814023efbfa525e280a6e280a6262aefbc88efbc89e28094e280947cefbc9ae2809ce3808ae3808befbc9fc2b7e38090e38091e38081efbc9be28098efbc8ce380822fe6b2a1e997aee9a298\t\t4.123456\t\t10\t\t10\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t1234567890abcdefghijklmnopqrstuvwsyz!@#$%^&amp;amp;*()_+}{|:&amp;#x27;`~-=[];,./&amp;lt;&amp;gt;?~\uff01@#\uffe5%\u2026\u2026&amp;amp;*\uff08\uff09\u2014\u2014|\uff1a\u201c\u300a\u300b\uff1f\u00b7\u3010\u3011\u3001\uff1b\u2018\uff0c\u3002/\u6ca1\u95ee\u9898\t\t4.123456789012345\t\tTrue\t\t1970-01-01T08:00:00.010+08:00\n7\t\t1970-01-01\t\t0x0\t\t12.12345\t\t-10\t\t-10\t\t\t\t\t\t12.12345678901234\t\tFalse\t\t1970-01-01T07:59:59.990+08:00\n8\t\t1970-01-01\t\t0x202020\t\t-0.0\t\t0\t\t0\t\t    \t\t    \t\t-0.0\t\tTrue\t\t1970-01-01T08:00:00.000+08:00\n9\t\t1970-01-01\t\tNone\t\t1.1\t\t10\t\tNone\t\ttest01\t\ttest01\t\tNone\t\tFalse\t\tNone\n10\t\tNone\t\t0x31323334353637383930\t\t1.1\t\tNone\t\t10\t\tNone\t\tNone\t\t1.1\t\tNone\t\t1970-01-01T08:00:00.010+08:00\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_tablets&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_tablets::setup&#34;, &#34;duration&#34;: &#34;682 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_tablets::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;682 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n        session = get_session_()\n        # \u521b\u5efa\u6570\u636e\u5e93\n        create_database(session)\n        # \u521b\u5efa\u65f6\u95f4\u5e8f\u5217\n        create_timeseries(session)\n&amp;gt;       create_aligned_timeseries(session)\n\ntree/test_treemodel_insert.py:195: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:147: in create_aligned_timeseries\n    session.create_aligned_time_series(device_id, measurements_lst, data_type_lst, encoding_lst, compressor_lst)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f351885f150&amp;gt;\ndevice_id = &amp;#x27;root.tests.g3.d1&amp;#x27;\nmeasurements_lst = [&amp;#x27;BOOLEAN&amp;#x27;, &amp;#x27;INT32&amp;#x27;, &amp;#x27;INT64&amp;#x27;, &amp;#x27;FLOAT&amp;#x27;, &amp;#x27;DOUBLE&amp;#x27;, &amp;#x27;TEXT&amp;#x27;, ...]\ndata_type_lst = [&amp;lt;TSDataType.BOOLEAN: 0&amp;gt;, &amp;lt;TSDataType.INT32: 1&amp;gt;, &amp;lt;TSDataType.INT64: 2&amp;gt;, &amp;lt;TSDataType.FLOAT: 3&amp;gt;, &amp;lt;TSDataType.DOUBLE: 4&amp;gt;, &amp;lt;TSDataType.TEXT: 5&amp;gt;, ...]\nencoding_lst = [&amp;lt;TSEncoding.RLE: 2&amp;gt;, &amp;lt;TSEncoding.CHIMP: 11&amp;gt;, &amp;lt;TSEncoding.ZIGZAG: 9&amp;gt;, &amp;lt;TSEncoding.RLBE: 13&amp;gt;, &amp;lt;TSEncoding.SPRINTZ: 12&amp;gt;, &amp;lt;TSEncoding.DICTIONARY: 1&amp;gt;, ...]\ncompressor_lst = [&amp;lt;Compressor.UNCOMPRESSED: 0&amp;gt;, &amp;lt;Compressor.SNAPPY: 1&amp;gt;, &amp;lt;Compressor.LZ4: 7&amp;gt;, &amp;lt;Compressor.GZIP: 2&amp;gt;, &amp;lt;Compressor.ZSTD: 8&amp;gt;, &amp;lt;Compressor.LZMA2: 9&amp;gt;, ...]\n\n    def create_aligned_time_series(\n        self, device_id, measurements_lst, data_type_lst, encoding_lst, compressor_lst\n    ):\n        &amp;quot;&amp;quot;&amp;quot;\n        create aligned time series\n        :param device_id: String, device id for timeseries (starts from root)\n        :param measurements_lst: List of String, measurement ids for time series\n        :param data_type_lst: List of TSDataType, data types for time series\n        :param encoding_lst: List of TSEncoding, encodings for time series\n        :param compressor_lst: List of Compressor, compressing types for time series\n        &amp;quot;&amp;quot;&amp;quot;\n    \n        request = TSCreateAlignedTimeseriesReq(\n            self.__session_id,\n            device_id,\n            measurements_lst,\n            data_type_lst,\n            encoding_lst,\n            compressor_lst,\n        )\n        try:\n            return rpc_utils.verify_success(\n                self.__client.createAlignedTimeseries(request)\n            )\n        except TTransport.TException as e:\n            if self.reconnect():\n                try:\n                    request.sessionId = self.__session_id\n                    return rpc_utils.verify_success(\n                        self.__client.createAlignedTimeseries(request)\n                    )\n                except TTransport.TException as e1:\n                    raise IoTDBConnectionException(e1) from None\n            else:\n&amp;gt;               raise IoTDBConnectionException(self.connection_error_msg()) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:420: IoTDBConnectionException\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_aligned_tablets&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_aligned_tablets::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_aligned_tablets::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f3509e50910&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_record&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_record::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_record::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f35099ccf90&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_aligned_record&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_aligned_record::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_aligned_record::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f3509e52d90&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_records&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_records::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_records::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f3509858810&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_aligned_records&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_aligned_records::setup&#34;, &#34;duration&#34;: &#34;2 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_aligned_records::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;2 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f3509e3e950&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_records_of_one_device&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_records_of_one_device::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_records_of_one_device::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f3509ae7d10&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_aligned_records_of_one_device&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_aligned_records_of_one_device::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_aligned_records_of_one_device::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f350992e710&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_str_record&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_str_record::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_str_record::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f350932a4d0&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}], &#34;tree/test_treemodel_insert.py::test_insert_direct&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;tree/test_treemodel_insert.py::test_insert_direct::setup&#34;, &#34;duration&#34;: &#34;1 ms&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;tree/test_treemodel_insert.py::test_insert_direct::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;1 ms&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;@pytest.fixture()\n    def fixture_():\n        # \u7528\u4f8b\u6267\u884c\u524d\u7684\u73af\u5883\u642d\u5efa\u4ee3\u7801\n        # \u83b7\u53d6session\n&amp;gt;       session = get_session_()\n                  ^^^^^^^^^^^^^^\n\ntree/test_treemodel_insert.py:190: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntree/test_treemodel_insert.py:44: in get_session_\n    session.open()\n../venv/lib/python3.11/site-packages/iotdb/Session.py:160: in open\n    self.__default_connection = self.init_connection(self.__default_endpoint)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../venv/lib/python3.11/site-packages/iotdb/Session.py:190: in init_connection\n    transport = self.__get_transport(endpoint)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = &amp;lt;iotdb.Session.Session object at 0x7f35098284d0&amp;gt;\nendpoint = TEndPoint(ip=&amp;#x27;127.0.0.1&amp;#x27;, port=&amp;#x27;6667&amp;#x27;)\n\n    def __get_transport(self, endpoint):\n        if self.__use_ssl:\n            import ssl\n            from thrift.transport import TSSLSocket\n    \n            if sys.version_info &amp;gt;= (3, 10):\n                context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)\n            else:\n                context = ssl.SSLContext(ssl.PROTOCOL_TLS)\n                context.verify_mode = ssl.CERT_REQUIRED\n                context.check_hostname = True\n            context.load_verify_locations(cafile=self.__ca_certs)\n            socket = TSSLSocket.TSSLSocket(\n                host=endpoint.ip, port=endpoint.port, ssl_context=context\n            )\n        else:\n            socket = TSocket.TSocket(endpoint.ip, endpoint.port)\n        socket.setTimeout(self.__connection_timeout_in_ms)\n        transport = TTransport.TFramedTransport(socket)\n    \n        if not transport.isOpen():\n            try:\n                transport.open()\n            except TTransport.TTransportException as e:\n&amp;gt;               raise IoTDBConnectionException(e) from None\nE               iotdb.utils.exception.IoTDBConnectionException: Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n\n../venv/lib/python3.11/site-packages/iotdb/Session.py:269: IoTDBConnectionException\n\n------------------------------ Captured log setup ------------------------------\nERROR    thrift.transport.TSocket:TSocket.py:152 Could not connect to any of [(&amp;#x27;127.0.0.1&amp;#x27;, 6667)]\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
