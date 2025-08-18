@@ -1,20 +1,20 @@
 {
   "tests": 12,
-  "failures": 0,
+  "failures": 5,
   "disabled": 0,
   "errors": 0,
-  "timestamp": "2025-08-18T14:11:48Z",
-  "time": "21.923s",
+  "timestamp": "2025-08-18T15:03:38Z",
+  "time": "84.218s",
   "name": "AllTests",
   "testsuites": [
     {
       "name": "test_session_connection",
       "tests": 6,
-      "failures": 0,
+      "failures": 3,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-18T14:11:48Z",
-      "time": "13.315s",
+      "timestamp": "2025-08-18T15:03:38Z",
+      "time": "12.812s",
       "testsuite": [
         {
           "name": "test_default_value",
@@ -22,8 +22,8 @@
           "line": 78,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:11:48Z",
-          "time": "1.568s",
+          "timestamp": "2025-08-18T15:03:38Z",
+          "time": "1.816s",
           "classname": "test_session_connection"
         },
         {
@@ -32,8 +32,8 @@
           "line": 97,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:11:50Z",
-          "time": "2.18s",
+          "timestamp": "2025-08-18T15:03:40Z",
+          "time": "2.089s",
           "classname": "test_session_connection"
         },
         {
@@ -42,8 +42,8 @@
           "line": 117,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:11:52Z",
-          "time": "3.284s",
+          "timestamp": "2025-08-18T15:03:42Z",
+          "time": "4.254s",
           "classname": "test_session_connection"
         },
         {
@@ -52,9 +52,15 @@
           "line": 155,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:11:55Z",
-          "time": "2.081s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-08-18T15:03:46Z",
+          "time": "4s",
+          "classname": "test_session_connection",
+          "failures": [
+            {
+              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp:42\nExpected equality of these values:\n  false\n  isErrorSessionTest\n    Which is: true\n[Error] test_zoneId - 500: Unknown database test_session_db1\n",
+              "type": ""
+            }
+          ]
         },
         {
           "name": "test_all",
@@ -62,9 +68,15 @@
           "line": 175,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:11:57Z",
-          "time": "2.071s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-08-18T15:03:50Z",
+          "time": "0.253s",
+          "classname": "test_session_connection",
+          "failures": [
+            {
+              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp:56\nExpected equality of these values:\n  \"test_session_db2\"\n  databaseName\n    Which is: \"test1\"\n[Error] test_all: The database name is incorrect\n",
+              "type": ""
+            }
+          ]
         },
         {
           "name": "test_error_fetchSize",
@@ -72,9 +84,15 @@
           "line": 232,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:11:59Z",
-          "time": "2.128s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-08-18T15:03:50Z",
+          "time": "0.398s",
+          "classname": "test_session_connection",
+          "failures": [
+            {
+              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp:27\nExpected equality of these values:\n  \"test_session_db1\"\n  databaseName\n    Which is: \"test1\"\nThe database name is incorrect\n",
+              "type": ""
+            }
+          ]
         }
       ]
     },
@@ -84,8 +102,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-18T14:12:02Z",
-      "time": "0.005s",
+      "timestamp": "2025-08-18T15:03:51Z",
+      "time": "0.007s",
       "testsuite": [
         {
           "name": "test_error_username_and_password",
@@ -93,8 +111,8 @@
           "line": 198,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:12:02Z",
-          "time": "0.002s",
+          "timestamp": "2025-08-18T15:03:51Z",
+          "time": "0.001s",
           "classname": "test_session_connection_error"
         },
         {
@@ -103,8 +121,8 @@
           "line": 214,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:12:02Z",
-          "time": "0.002s",
+          "timestamp": "2025-08-18T15:03:51Z",
+          "time": "0.006s",
           "classname": "test_session_connection_error"
         }
       ]
@@ -112,11 +130,11 @@
     {
       "name": "TableSelectTest",
       "tests": 2,
-      "failures": 0,
+      "failures": 1,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-18T14:12:02Z",
-      "time": "4.41s",
+      "timestamp": "2025-08-18T15:03:51Z",
+      "time": "1.918s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -124,8 +142,8 @@
           "line": 226,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:12:02Z",
-          "time": "1.326s",
+          "timestamp": "2025-08-18T15:03:51Z",
+          "time": "1.341s",
           "classname": "TableSelectTest"
         },
         {
@@ -134,20 +152,30 @@
           "line": 384,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:12:03Z",
-          "time": "3.083s",
-          "classname": "TableSelectTest"
+          "timestamp": "2025-08-18T15:03:52Z",
+          "time": "0.577s",
+          "classname": "TableSelectTest",
+          "failures": [
+            {
+              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/select_test.cpp:165\nExpected equality of these values:\n  false\n  isErrorTest_select_test\n    Which is: true\n[Error] IoTDBException - 500: Unknown database test_select\n",
+              "type": ""
+            },
+            {
+              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/select_test.cpp:214\nExpected equality of these values:\n  false\n  isErrorTest_select_test\n    Which is: true\n[Error] IoTDBException - 500: Database test_select doesn't exist\n",
+              "type": ""
+            }
+          ]
         }
       ]
     },
     {
       "name": "TreeSelectTest",
       "tests": 2,
-      "failures": 0,
+      "failures": 1,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-18T14:12:06Z",
-      "time": "4.191s",
+      "timestamp": "2025-08-18T15:03:53Z",
+      "time": "69.478s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -155,8 +183,8 @@
           "line": 220,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:12:06Z",
-          "time": "1.132s",
+          "timestamp": "2025-08-18T15:03:53Z",
+          "time": "1.453s",
           "classname": "TreeSelectTest"
         },
         {
@@ -165,9 +193,15 @@
           "line": 320,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-18T14:12:07Z",
-          "time": "3.058s",
-          "classname": "TreeSelectTest"
+          "timestamp": "2025-08-18T15:03:54Z",
+          "time": "68.024s",
+          "classname": "TreeSelectTest",
+          "failures": [
+            {
+              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/tree\/select_test.cpp:191\nExpected equality of these values:\n  false\n  isErrorTest_TreeSelect\n    Which is: true\n[Error] IoTDBException - 508: Path does not exist. \n",
+              "type": ""
+            }
+          ]
         }
       ]
     }
