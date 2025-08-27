@@ -1,10 +1,10 @@
 {
   "tests": 11,
-  "failures": 1,
+  "failures": 0,
   "disabled": 0,
   "errors": 0,
-  "timestamp": "2025-08-27T19:19:42Z",
-  "time": "21.004s",
+  "timestamp": "2025-08-27T21:18:42Z",
+  "time": "20.916s",
   "name": "AllTests",
   "testsuites": [
     {
@@ -13,8 +13,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-27T19:19:42Z",
-      "time": "12.457s",
+      "timestamp": "2025-08-27T21:18:42Z",
+      "time": "13.403s",
       "testsuite": [
         {
           "name": "test_default_value",
@@ -22,8 +22,8 @@
           "line": 78,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:42Z",
-          "time": "1.856s",
+          "timestamp": "2025-08-27T21:18:42Z",
+          "time": "2.459s",
           "classname": "test_session_connection"
         },
         {
@@ -32,8 +32,8 @@
           "line": 97,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:44Z",
-          "time": "2.074s",
+          "timestamp": "2025-08-27T21:18:45Z",
+          "time": "2.098s",
           "classname": "test_session_connection"
         },
         {
@@ -42,8 +42,8 @@
           "line": 117,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:46Z",
-          "time": "4.208s",
+          "timestamp": "2025-08-27T21:18:47Z",
+          "time": "4.257s",
           "classname": "test_session_connection"
         },
         {
@@ -52,8 +52,8 @@
           "line": 155,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:50Z",
-          "time": "2.088s",
+          "timestamp": "2025-08-27T21:18:51Z",
+          "time": "2.505s",
           "classname": "test_session_connection"
         },
         {
@@ -62,8 +62,8 @@
           "line": 175,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:52Z",
-          "time": "2.228s",
+          "timestamp": "2025-08-27T21:18:53Z",
+          "time": "2.082s",
           "classname": "test_session_connection"
         }
       ]
@@ -71,10 +71,10 @@
     {
       "name": "test_session_connection_error",
       "tests": 2,
-      "failures": 1,
+      "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-27T19:19:54Z",
+      "timestamp": "2025-08-27T21:18:55Z",
       "time": "0.002s",
       "testsuite": [
         {
@@ -83,15 +83,9 @@
           "line": 198,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:54Z",
+          "timestamp": "2025-08-27T21:18:55Z",
           "time": "0.002s",
-          "classname": "test_session_connection_error",
-          "failures": [
-            {
-              "failure": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp:208\nExpected equality of these values:\n  \"801: Authentication failed.\"\n  string(e.what())\n    Which is: \"No available node to establish SessionConnection.\"\n[Error] Error message does not match expectations, expect: 801: Authentication failed., actual: No available node to establish SessionConnection.\n",
-              "type": ""
-            }
-          ]
+          "classname": "test_session_connection_error"
         },
         {
           "name": "test_error_rpcPort",
@@ -99,7 +93,7 @@
           "line": 228,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:54Z",
+          "timestamp": "2025-08-27T21:18:55Z",
           "time": "0s",
           "classname": "test_session_connection_error"
         }
@@ -111,8 +105,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-27T19:19:54Z",
-      "time": "5.182s",
+      "timestamp": "2025-08-27T21:18:55Z",
+      "time": "3.365s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -120,7 +114,7 @@
           "line": 226,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:54Z",
+          "timestamp": "2025-08-27T21:18:55Z",
           "time": "2.086s",
           "classname": "TableSelectTest"
         },
@@ -130,8 +124,8 @@
           "line": 384,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:19:57Z",
-          "time": "3.096s",
+          "timestamp": "2025-08-27T21:18:58Z",
+          "time": "1.278s",
           "classname": "TableSelectTest"
         }
       ]
@@ -142,8 +136,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-08-27T19:20:00Z",
-      "time": "3.361s",
+      "timestamp": "2025-08-27T21:18:59Z",
+      "time": "4.145s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -151,8 +145,8 @@
           "line": 220,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:20:00Z",
-          "time": "1.163s",
+          "timestamp": "2025-08-27T21:18:59Z",
+          "time": "1.154s",
           "classname": "TreeSelectTest"
         },
         {
@@ -161,8 +155,8 @@
           "line": 320,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-08-27T19:20:01Z",
-          "time": "2.197s",
+          "timestamp": "2025-08-27T21:19:00Z",
+          "time": "2.99s",
           "classname": "TreeSelectTest"
         }
       ]
