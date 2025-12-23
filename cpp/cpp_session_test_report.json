@@ -3,99 +3,99 @@
   "failures": 0,
   "disabled": 0,
   "errors": 0,
-  "timestamp": "2025-12-22T20:16:07Z",
-  "time": "17.906s",
+  "timestamp": "2025-12-23T13:16:12Z",
+  "time": "19.872s",
   "name": "AllTests",
   "testsuites": [
     {
-      "name": "test_session_connection",
+      "name": "TestSessionConnection",
       "tests": 5,
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-12-22T20:16:07Z",
-      "time": "11.241s",
+      "timestamp": "2025-12-23T13:16:12Z",
+      "time": "12.424s",
       "testsuite": [
         {
-          "name": "test_default_value",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 78,
+          "name": "TestDefaultValue",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 77,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:07Z",
-          "time": "1.286s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-12-23T13:16:12Z",
+          "time": "1.388s",
+          "classname": "TestSessionConnection"
         },
         {
-          "name": "test_database",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 97,
+          "name": "TestDatabaseParameter",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 99,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:09Z",
-          "time": "1.194s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-12-23T13:16:14Z",
+          "time": "2.108s",
+          "classname": "TestSessionConnection"
         },
         {
-          "name": "test_fetchSize",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 117,
+          "name": "TestFetchSizeParameter",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 122,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:10Z",
-          "time": "4.151s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-12-23T13:16:16Z",
+          "time": "4.17s",
+          "classname": "TestSessionConnection"
         },
         {
-          "name": "test_zoneId",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 155,
+          "name": "TestZoneIdParameter",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 166,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:14Z",
-          "time": "2.074s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-12-23T13:16:20Z",
+          "time": "2.076s",
+          "classname": "TestSessionConnection"
         },
         {
-          "name": "test_all",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 175,
+          "name": "TestAllParameter",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 189,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:16Z",
-          "time": "2.533s",
-          "classname": "test_session_connection"
+          "timestamp": "2025-12-23T13:16:22Z",
+          "time": "2.679s",
+          "classname": "TestSessionConnection"
         }
       ]
     },
     {
-      "name": "test_session_connection_error",
+      "name": "TestSessionConnectionError",
       "tests": 2,
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-12-22T20:16:19Z",
-      "time": "0.003s",
+      "timestamp": "2025-12-23T13:16:25Z",
+      "time": "0.002s",
       "testsuite": [
         {
-          "name": "test_error_username_and_password",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 198,
+          "name": "TestErrorUsernameAndPasswordParameter",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 215,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:19Z",
-          "time": "0.003s",
-          "classname": "test_session_connection_error"
+          "timestamp": "2025-12-23T13:16:25Z",
+          "time": "0.002s",
+          "classname": "TestSessionConnectionError"
         },
         {
-          "name": "test_error_rpcPort",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/session_test.cpp",
-          "line": 228,
+          "name": "TestErrorRpcPortParameter",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_session_test.cpp",
+          "line": 251,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:19Z",
+          "timestamp": "2025-12-23T13:16:25Z",
           "time": "0s",
-          "classname": "test_session_connection_error"
+          "classname": "TestSessionConnectionError"
         }
       ]
     },
@@ -105,27 +105,27 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-12-22T20:16:19Z",
-      "time": "4.321s",
+      "timestamp": "2025-12-23T13:16:25Z",
+      "time": "5.154s",
       "testsuite": [
         {
           "name": "TestSelect1",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/select_test.cpp",
-          "line": 226,
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_select_test.cpp",
+          "line": 229,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:19Z",
-          "time": "1.257s",
+          "timestamp": "2025-12-23T13:16:25Z",
+          "time": "2.077s",
           "classname": "TableSelectTest"
         },
         {
           "name": "TestSelect2",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/select_test.cpp",
-          "line": 384,
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/table\/table_select_test.cpp",
+          "line": 387,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:20Z",
-          "time": "3.064s",
+          "timestamp": "2025-12-23T13:16:27Z",
+          "time": "3.077s",
           "classname": "TableSelectTest"
         }
       ]
@@ -136,27 +136,27 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2025-12-22T20:16:23Z",
-      "time": "2.339s",
+      "timestamp": "2025-12-23T13:16:30Z",
+      "time": "2.29s",
       "testsuite": [
         {
           "name": "TestSelect1",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/tree\/select_test.cpp",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/tree\/tree_select_test.cpp",
           "line": 220,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:23Z",
-          "time": "1.198s",
+          "timestamp": "2025-12-23T13:16:30Z",
+          "time": "1.155s",
           "classname": "TreeSelectTest"
         },
         {
           "name": "TestSelect2",
-          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/tree\/select_test.cpp",
+          "file": "\/data\/qa\/cpp-native-api-testcase\/test\/tree\/tree_select_test.cpp",
           "line": 320,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2025-12-22T20:16:24Z",
-          "time": "1.14s",
+          "timestamp": "2025-12-23T13:16:31Z",
+          "time": "1.134s",
           "classname": "TreeSelectTest"
         }
       ]
