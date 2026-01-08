@@ -3,8 +3,8 @@
   "failures": 0,
   "disabled": 0,
   "errors": 0,
-  "timestamp": "2026-01-08T13:08:05Z",
-  "time": "19.479s",
+  "timestamp": "2026-01-08T15:49:51Z",
+  "time": "19.527s",
   "name": "AllTests",
   "testsuites": [
     {
@@ -13,8 +13,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2026-01-08T13:08:05Z",
-      "time": "11.905s",
+      "timestamp": "2026-01-08T15:49:51Z",
+      "time": "11.801s",
       "testsuite": [
         {
           "name": "TestDefaultValue",
@@ -22,8 +22,8 @@
           "line": 77,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:05Z",
-          "time": "1.442s",
+          "timestamp": "2026-01-08T15:49:51Z",
+          "time": "1.363s",
           "classname": "TestSessionConnection"
         },
         {
@@ -32,8 +32,8 @@
           "line": 99,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:07Z",
-          "time": "2.1s",
+          "timestamp": "2026-01-08T15:49:53Z",
+          "time": "2.093s",
           "classname": "TestSessionConnection"
         },
         {
@@ -42,8 +42,8 @@
           "line": 122,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:09Z",
-          "time": "4.166s",
+          "timestamp": "2026-01-08T15:49:55Z",
+          "time": "4.177s",
           "classname": "TestSessionConnection"
         },
         {
@@ -52,8 +52,8 @@
           "line": 166,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:13Z",
-          "time": "2.085s",
+          "timestamp": "2026-01-08T15:49:59Z",
+          "time": "2.089s",
           "classname": "TestSessionConnection"
         },
         {
@@ -62,8 +62,8 @@
           "line": 189,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:15Z",
-          "time": "2.109s",
+          "timestamp": "2026-01-08T15:50:01Z",
+          "time": "2.077s",
           "classname": "TestSessionConnection"
         }
       ]
@@ -74,8 +74,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2026-01-08T13:08:17Z",
-      "time": "0.004s",
+      "timestamp": "2026-01-08T15:50:03Z",
+      "time": "0.002s",
       "testsuite": [
         {
           "name": "TestErrorUsernameAndPasswordParameter",
@@ -83,8 +83,8 @@
           "line": 215,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:17Z",
-          "time": "0.004s",
+          "timestamp": "2026-01-08T15:50:03Z",
+          "time": "0.002s",
           "classname": "TestSessionConnectionError"
         },
         {
@@ -93,7 +93,7 @@
           "line": 251,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:17Z",
+          "timestamp": "2026-01-08T15:50:03Z",
           "time": "0s",
           "classname": "TestSessionConnectionError"
         }
@@ -105,8 +105,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2026-01-08T13:08:17Z",
-      "time": "5.248s",
+      "timestamp": "2026-01-08T15:50:03Z",
+      "time": "5.319s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -114,8 +114,8 @@
           "line": 229,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:17Z",
-          "time": "2.151s",
+          "timestamp": "2026-01-08T15:50:03Z",
+          "time": "2.081s",
           "classname": "TableSelectTest"
         },
         {
@@ -124,8 +124,8 @@
           "line": 387,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:19Z",
-          "time": "3.096s",
+          "timestamp": "2026-01-08T15:50:05Z",
+          "time": "3.237s",
           "classname": "TableSelectTest"
         }
       ]
@@ -136,8 +136,8 @@
       "failures": 0,
       "disabled": 0,
       "errors": 0,
-      "timestamp": "2026-01-08T13:08:22Z",
-      "time": "2.321s",
+      "timestamp": "2026-01-08T15:50:08Z",
+      "time": "2.403s",
       "testsuite": [
         {
           "name": "TestSelect1",
@@ -145,8 +145,8 @@
           "line": 220,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:22Z",
-          "time": "1.195s",
+          "timestamp": "2026-01-08T15:50:08Z",
+          "time": "1.173s",
           "classname": "TreeSelectTest"
         },
         {
@@ -155,8 +155,8 @@
           "line": 320,
           "status": "RUN",
           "result": "COMPLETED",
-          "timestamp": "2026-01-08T13:08:24Z",
-          "time": "1.126s",
+          "timestamp": "2026-01-08T15:50:10Z",
+          "time": "1.229s",
           "classname": "TreeSelectTest"
         }
       ]
